@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5317155458192340370, guid: 1c1390c5610908d40a781c84317e0680,
         type: 3}
       propertyPath: m_Name
-      value: HexPrefab
+      value: HexStar
       objectReference: {fileID: 0}
     - target: {fileID: 5317155458192340371, guid: 1c1390c5610908d40a781c84317e0680,
         type: 3}

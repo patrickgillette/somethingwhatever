@@ -9,6 +9,8 @@ public class Hex
     public readonly int R;
     public readonly int S;
 
+    public float Elevation;
+
     public Hex(int q, int r)
     {
         this.Q = q;

@@ -323,10 +323,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb205bc5694ef647b205c8cfd00d991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomMap: 1
+  randomMap: 0
   blankMap: 0
+  testMap: 1
   HexPrefab: {fileID: 5317155458192340370, guid: 1c1390c5610908d40a781c84317e0680,
     type: 3}
+  HexStar: {fileID: 1923499226109181557, guid: 4e9469de3cce2a1449fbec0e67d77887, type: 3}
   MatSpace: {fileID: 2100000, guid: 1fcc18eaf0d49ed4a8d323124dc76ba8, type: 2}
   MatPlanet: {fileID: 2100000, guid: c289847681b90fe4bb1df70c5970566e, type: 2}
   MatStar: {fileID: 2100000, guid: 77b9f7c122a16f4409e40a2105a08238, type: 2}
