@@ -149,16 +149,14 @@ public class MouseController : MonoBehaviour
         else if( Input.GetMouseButton(0) && 
             Vector3.Distance( Input.mousePosition, lastMousePosition) > mouseDragThreshold )
         {
-            // Left button is being held down AND the mouse moved? That's a camera drag!
+            // Left button is being held down AND the mouse moved? That's a camera drag
             Update_CurrentFunc = Update_CameraDrag;
             lastMouseGroundPlanePosition = MouseToGroundPlane(Input.mousePosition);
             Update_CurrentFunc();
         }
         else if( selectionController.SelectedUnit != null && Input.GetMouseButton(1) )
         {
-            // We have a selected unit, and we are holding down the mouse
-            // button.  We are in unit movement mode -- show a path from
-            // unit to mouse position via the pathfinding system.
+ 
         }
 
     }
@@ -177,7 +175,7 @@ public class MouseController : MonoBehaviour
             // Something got hit
             //Debug.Log( hitInfo.collider.name);
 
-            // The collider is a child of the "correct" game object that we want.
+  
             GameObject hexGO = hitInfo.collider.gameObject; //collider was rigid body but wasnt working
             //Debug.Log(hexGO);
             //Debug.Log(hexMap.GetHexFromGameObject(hexGO));
@@ -196,7 +194,7 @@ public class MouseController : MonoBehaviour
     Vector3 MouseToGroundPlane(Vector3 mousePos)
     {
         Ray mouseRay = Camera.main.ScreenPointToRay (mousePos);
-        // What is the point at which the mouse ray intersects Y=0
+
         if (mouseRay.direction.y >= 0) {
             //Debug.LogError("Why is mouse pointing up?");
             return Vector3.zero;
@@ -215,7 +213,7 @@ public class MouseController : MonoBehaviour
             {
                 selectionController.SelectedUnit.SetHexPath(hexPath);
 
-                // TODO: Tell Unit and/or HexMap to process unit movement
+
 
                 StartCoroutine( hexMap.DoUnitMoves(selectionController.SelectedUnit) );
             }
@@ -262,18 +260,17 @@ public class MouseController : MonoBehaviour
 
     void Update_ScrollZoom()
     {
-        // Zoom to scrollwheel
+
         float scrollAmount = Input.GetAxis ("Mouse ScrollWheel");
         float minHeight = 2;
         float maxHeight = 20;
-        // Move camera towards hitPos
+
         Vector3 hitPos = MouseToGroundPlane(Input.mousePosition);
         Vector3 dir = hitPos - Camera.main.transform.position;
 
         Vector3 p = Camera.main.transform.position;
 
-        // Stop zooming out at a certain distance.
-        // TODO: Maybe you should still slide around at 20 zoom?
+
         if (scrollAmount > 0 || p.y < (maxHeight - 0.1f)) {
             cameraTargetOffset += dir * scrollAmount;
         }
