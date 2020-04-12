@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 261279e4c94a65f419bc9deeecefd93a,
         type: 3}
       propertyPath: m_Name
-      value: HexModel
+      value: HexModel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 261279e4c94a65f419bc9deeecefd93a,
+        type: 3}
+      propertyPath: m_TagString
+      value: selectable
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 261279e4c94a65f419bc9deeecefd93a,
         type: 3}

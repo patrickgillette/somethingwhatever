@@ -136,7 +136,7 @@ InputManager:
   - serializedVersion: 3
     m_Name: Mouse ScrollWheel
     descriptiveName: 
-    descriptiveNegativeName: 
+    descriptiveNegativeName: Mouse ScrollWheel Negative
     negativeButton: 
     positiveButton: 
     altNegativeButton: 

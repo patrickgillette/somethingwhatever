@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6631e4e30839dae4eae62d9a77a1077b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - UnitSelectionPanel: {fileID: -927199367670048503, guid: 7ed5f0b7d36b3d640a2a00b7887ed416,
+      type: 3}
+  - CitySelectionPanel: {fileID: -927199367670048503, guid: 7ed5f0b7d36b3d640a2a00b7887ed416,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
